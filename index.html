@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mamta Sweet Home — Grih Udghaatan | 27 Sept 2026</title>
+<meta name="description" content="You are cordially invited to the Grih Udghaatan (Housewarming) of Mamta Sweet Home on 27 September 2026 at 1 PM, Choudhary Farm House, Bagharpur Road, Paigambarpur Sukhwasial, UP.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Grih Udghaatan Invitation — Mamta Sweet Home">
+<meta property="og:description" content="27 September 2026 · 1:00 PM · Choudhary Farm House, Bagharpur Road, Paigambarpur Sukhwasial, UP 244501">
+<meta property="og:image" content="assets/invitation.png">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Playfair+Display:wght@600;700;800&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Decorative fixed corner ornaments -->
+<div class="corner-deco corner-tl" aria-hidden="true">🌸</div>
+<div class="corner-deco corner-br" aria-hidden="true">🌸</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">॥ श्री गणेशाय नमः ॥</p>
+    <div class="om-symbol" aria-hidden="true">ॐ</div>
+    <p class="together">Together with our family</p>
+    <p class="invite-line">We cordially invite you to</p>
+    <h1 class="home-title">
+      <span class="home-icon" aria-hidden="true">🏠</span>
+      <span class="script-name">Mamta</span>
+      <span class="sweet-home">Sweet Home</span>
+    </h1>
+    <div class="badge-ribbon"><span>✦ Grih Udghaatan ✦</span></div>
+    <p class="hero-sub">With great pleasure, our family invites all our guests, friends and relatives to celebrate the inauguration of our new home.</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- INVITATION CARD IMAGE -->
+  <section class="card invitation-card" aria-labelledby="invitation-heading">
+    <h2 id="invitation-heading" class="visually-hidden">Invitation Card</h2>
+    <div class="invitation-frame">
+      <img src="assets/invitation.png" alt="Grih Udghaatan invitation card for Mamta Sweet Home, 27 September 2026, 1 PM, Choudhary Farm House, Bagharpur Road, Paigambarpur Sukhwasial, Uttar Pradesh 244501. Courtesy Master Yograj Singh." loading="lazy">
+    </div>
+    <div class="action-row">
+      <button id="shareBtn" class="btn btn-gold" type="button">
+        <span aria-hidden="true">📤</span> Share Invitation
+      </button>
+      <a id="venueBtn" class="btn btn-outline" href="#" target="_blank" rel="noopener">
+        <span aria-hidden="true">📍</span> Get Directions
+      </a>
+    </div>
+    <p id="shareFallbackNote" class="hint-text" hidden></p>
+  </section>
+
+  <!-- EVENT DETAILS -->
+  <section class="card details-card" aria-labelledby="details-heading">
+    <h2 id="details-heading" class="section-title">Event Details</h2>
+    <ul class="details-list">
+      <li>
+        <span class="detail-icon" aria-hidden="true">📅</span>
+        <span><strong>Date</strong><br>Sunday, 27 September 2026</span>
+      </li>
+      <li>
+        <span class="detail-icon" aria-hidden="true">🕐</span>
+        <span><strong>Time</strong><br>1:00 PM (IST)</span>
+      </li>
+      <li>
+        <span class="detail-icon" aria-hidden="true">📍</span>
+        <span><strong>Venue</strong><br>Choudhary Farm House (Bagharpur Road), Paigambarpur Sukhwasial, Uttar Pradesh 244501</span>
+      </li>
+      <li>
+        <span class="detail-icon" aria-hidden="true">📞</span>
+        <span><strong>Contact</strong><br><a href="tel:+919719350184">97193 50184</a> &nbsp;|&nbsp; <a href="tel:+917906030720">79060 30720</a></span>
+      </li>
+      <li>
+        <span class="detail-icon" aria-hidden="true">🙏</span>
+        <span><strong>By Courtesy</strong><br>Master Yograj Singh</span>
+      </li>
+    </ul>
+    <p class="tagline">New home, New beginnings.</p>
+    <p class="hero-sub small">Your presence and blessings will make this occasion truly auspicious.</p>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="card countdown-card" aria-labelledby="countdown-heading">
+    <h2 id="countdown-heading" class="section-title">Countdown to the Celebration</h2>
+    <p id="daysToGoMsg" class="days-to-go" role="status" aria-live="polite">Loading countdown…</p>
+    <div id="countdownGrid" class="countdown-grid" role="timer" aria-label="Time remaining until the event">
+      <div class="count-box"><span id="cd-days" class="count-num">00</span><span class="count-label">Days</span></div>
+      <div class="count-box"><span id="cd-hours" class="count-num">00</span><span class="count-label">Hours</span></div>
+      <div class="count-box"><span id="cd-mins" class="count-num">00</span><span class="count-label">Minutes</span></div>
+      <div class="count-box"><span id="cd-secs" class="count-num">00</span><span class="count-label">Seconds</span></div>
+    </div>
+    <p id="specialMsg" class="special-msg" hidden></p>
+  </section>
+
+  <!-- SMS REMINDER -->
+  <section class="card reminder-card" aria-labelledby="reminder-heading">
+    <h2 id="reminder-heading" class="section-title">Send an SMS Reminder</h2>
+    <p class="hint-text">
+      This is a static website with no backend or messaging API. It cannot send SMS on its own —
+      it simply opens your phone's SMS app with the message and number already filled in.
+      You always press <strong>Send</strong> yourself.
+    </p>
+
+    <div class="today-message-box">
+      <h3 class="sub-title">Today's Auto-Generated Reminder</h3>
+      <textarea id="todayMessage" class="message-preview" rows="5" readonly aria-label="Today's generated reminder message"></textarea>
+    </div>
+
+    <h3 class="sub-title">Select Friends to Remind</h3>
+
+    <div class="friends-toolbar">
+      <input type="search" id="friendSearch" class="search-input" placeholder="🔍 Search friend by name…" aria-label="Search friends by name">
+      <div class="toolbar-buttons">
+        <button type="button" id="selectAllBtn" class="btn btn-small btn-outline">Select All</button>
+        <button type="button" id="clearAllBtn" class="btn btn-small btn-outline">Clear All</button>
+      </div>
+    </div>
+
+    <p id="selectedCount" class="selected-count" aria-live="polite">0 of 15 selected</p>
+
+    <ul id="friendsList" class="friends-list" role="group" aria-label="Friends list"></ul>
+
+    <div class="sms-preview-box">
+      <h3 class="sub-title">Message Preview</h3>
+      <textarea id="smsPreview" class="message-preview" rows="5" readonly aria-label="SMS message preview"></textarea>
+    </div>
+
+    <div id="sequenceProgressWrap" class="sequence-progress" hidden aria-live="polite">
+      <p id="sequenceProgressText"></p>
+      <div class="progress-track"><div id="sequenceProgressBar" class="progress-bar"></div></div>
+    </div>
+
+    <div class="action-row">
+      <button id="sendReminderBtn" class="btn btn-gold btn-large" type="button" disabled>
+        <span aria-hidden="true">📱</span> Send Reminder
+      </button>
+      <button id="nextFriendBtn" class="btn btn-outline btn-large" type="button" hidden>
+        Next Friend ➜
+      </button>
+    </div>
+
+    <p id="smsStatusNote" class="hint-text status-note" role="status" aria-live="polite"></p>
+  </section>
+
+  <footer class="site-footer">
+    <p>Made with 🪔 for the Grih Udghaatan of Mamta Sweet Home</p>
+    <p class="footer-small">27 September 2026 · Choudhary Farm House, Bagharpur Road, Paigambarpur Sukhwasial, UP 244501</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
